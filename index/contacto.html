@@ -1,9 +1,74 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Contacto</title>
-        <link rel="stylesheet" href="estilo4.css">
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/estilocontacto.css">
+
+	<title>Contacto</title>
+	<style>
+		form {
+            margin-top: 5%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		input[type="text"], textarea {
+            
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			width: 50%;
+			box-sizing: border-box;
+		}
+		
+		input[type="submit"] {
+			background-color: #000000;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		
+		label {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		
+		.error {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+    <h1>Trabajemos Juntos!</h1>
+	<form method="post" action="enviar.php">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+		
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" required>
+		
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+		
+		<input type="submit" value="Enviar">
+	</form>
+    <footer>
+    
+        
+        <a href="https://www.facebook.com/Chazyalp2"><img class="imanav" src="../imagenes/face.png" alt="Imagen"> </a>  
+        <a href="https://www.instagram.com/parkchazy/"><img class="imanav" src="../imagenes/instagram.png" alt="Imagen"> </a>    
+        <a href="https://www.linkedin.com/in/william-alexander-fernandez/"><img class="imanav" src="../imagenes/linkedin.png" alt="Imagen"></a>
+  
       
-    </body>
+</footer>    
+</body>
 </html>
